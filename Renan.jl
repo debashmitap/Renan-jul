@@ -1,6 +1,7 @@
-using ThinkJulia
+using Luxor
 
-r = Turtle()
+r = Turtle(0.0, 0.0, true, 0.0, (0.20, 1.0, 0.50))
+Drawing(1000, 1000, "Renan.png")
 
 @svg begin
     turn(r, -90)

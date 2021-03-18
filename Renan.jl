@@ -2,6 +2,16 @@ using Luxor
 
 r = Turtle(0.0, 0.0, true, 0.0, (0.20, 1.0, 0.50))
 
+#function to print N
+function N()
+    Pendown(r)
+    Turn(r, -90)
+    Forward(r, 100)
+    Turn(r, 155)
+    Forward(r, 110)
+    Turn(r, -155)
+    Forward(r, 100)
+end
 
 @svg begin
     Reposition(r, -250, -100)
@@ -61,13 +71,7 @@ r = Turtle(0.0, 0.0, true, 0.0, (0.20, 1.0, 0.50))
     Forward(r, 50)
 
     #The first N
-    Pendown(r)
-    Turn(r, -90)
-    Forward(r, 100)
-    Turn(r, 155)
-    Forward(r, 110)
-    Turn(r, -155)
-    Forward(r, 100)
+     N()
 
     #The third space
     Penup(r)
@@ -95,13 +99,7 @@ r = Turtle(0.0, 0.0, true, 0.0, (0.20, 1.0, 0.50))
     Forward(r, 70)
 
     #The second N
-    Pendown(r)
-    Turn(r, -90)
-    Forward(r, 100)
-    Turn(r, 155)
-    Forward(r, 110)
-    Turn(r, -155)
-    Forward(r, 100)
+    N()
 
     #The fifth space
     Penup(r)
